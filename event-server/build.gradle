@@ -1,0 +1,8 @@
+dependencies {
+    compile project(':core')
+
+    compile ('com.hubspot.dropwizard:dropwizard-guice:' + '0.8.+') {
+        exclude group: 'com.google.inject', module: 'guice_servlet'
+    }
+
+}
