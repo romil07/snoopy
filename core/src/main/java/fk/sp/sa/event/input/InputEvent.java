@@ -10,9 +10,10 @@ import java.util.Map;
  */
 @Data
 public class InputEvent {
+
     protected long timestamp;
     @JsonProperty("type")
     protected String eventType;
     @JsonProperty("event")
-    protected Map<String,Object> eventPayload;
+    protected Map<String, Object> eventPayload;
 }

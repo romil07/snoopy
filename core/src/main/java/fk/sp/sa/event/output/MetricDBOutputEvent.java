@@ -1,7 +1,6 @@
 package fk.sp.sa.event.output;
 
 import lombok.Data;
-import lombok.NonNull;
 import lombok.experimental.Builder;
 
 /**
@@ -10,7 +9,8 @@ import lombok.experimental.Builder;
 @Data
 @Builder
 public class MetricDBOutputEvent extends OutputEvent {
-    private final static String EVENT_NAME="metricDB";
+
+    private final static String EVENT_NAME = "metricDB";
     @Dimension
     private String userId;
     @Dimension

@@ -5,6 +5,6 @@ import io.dropwizard.Configuration;
 import lombok.Data;
 
 @Data
-public class EventServerConfiguration extends Configuration{
+public class EventServerConfiguration extends Configuration {
 
 }
