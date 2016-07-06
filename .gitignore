@@ -1,0 +1,16 @@
+.gradle/
+*.iml
+*.ipr
+*.iws
+*.class
+build
+.idea
+.sonar
+.DS_Store
+.idea/
+logs/
+*.pyc
+out/
+classes
+gradle/wrapper
+.idea/codeStyleSettings.xml

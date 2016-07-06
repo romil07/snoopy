@@ -1,0 +1,7 @@
+server:
+  applicationConnectors:
+  - type: http
+    port: 19090
+  adminConnectors:
+  - type: http
+    port: 19091

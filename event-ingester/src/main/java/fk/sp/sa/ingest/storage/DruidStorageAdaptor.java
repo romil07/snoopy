@@ -15,7 +15,6 @@ public class DruidStorageAdaptor implements StorageAdaptor {
 
     @Override
     public void init() {
-
     }
 
     @Override

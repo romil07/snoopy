@@ -7,6 +7,5 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Message {
-
     private InputEvent inputEvent;
 }

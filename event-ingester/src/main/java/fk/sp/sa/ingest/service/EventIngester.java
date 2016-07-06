@@ -21,7 +21,6 @@ public class EventIngester {
     }
 
     public void init() {
-
     }
 
     public void start() {
@@ -34,7 +33,6 @@ public class EventIngester {
     public void stop() {
         stop = true;
     }
-
 
     public static Options getOptions() {
         Options options = new Options();
@@ -59,6 +57,5 @@ public class EventIngester {
         log.info("Starting the event ingester");
         eventIngester.start();
         log.info("Event Ingester started");
-
     }
 }
