@@ -1,11 +1,13 @@
 package fk.sp.sa.event.output;
 
+import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 
 import java.lang.reflect.Field;
 import java.util.*;
 
 @Slf4j
+@ToString
 public abstract class OutputEvent {
     /*
     This method provides a name of the event which is used to read the route of this event from config files

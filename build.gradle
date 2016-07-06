@@ -22,8 +22,6 @@ subprojects {
                 'io.dropwizard:dropwizard-views-mustache:' + dropwizardVersion,
                 'io.dropwizard:dropwizard-assets:' + dropwizardVersion
         compile 'org.projectlombok:lombok:' + lombokVersion
-        compile 'org.slf4j:slf4j-log4j12:1.7.21'
-        compile 'org.slf4j:slf4j-api:1.7.21'
         compile 'com.google.inject:guice:4.0'
         testCompile group: 'junit', name: 'junit', version: '4.11'
     }

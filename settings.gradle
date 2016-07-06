@@ -1,9 +1,8 @@
 rootProject.name = 'seldon-ui-analytics_v2'
 
 include 'event-transformers'
-include 'generic-trasnformer'
 include 'event-server'
 include 'core'
-
 include 'event-ingester'
+include 'metricsDB-transformer'
 
