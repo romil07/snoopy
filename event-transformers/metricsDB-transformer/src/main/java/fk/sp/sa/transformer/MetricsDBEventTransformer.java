@@ -8,7 +8,7 @@ public class MetricsDBEventTransformer implements EventTransformer {
 
     @Override
     public MetricDBOutputEvent transform(InputEvent inputEvent) {
-        return null;
+        return MetricDBOutputEvent.builder().build();
     }
 
     @Override

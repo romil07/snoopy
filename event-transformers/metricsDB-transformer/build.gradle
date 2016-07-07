@@ -1,10 +1,5 @@
 apply plugin: 'java'
 
-idea {
-    module {
-        sourceDirs += file('src/main/java')
-    }
-}
 repositories {
     mavenCentral()
 }

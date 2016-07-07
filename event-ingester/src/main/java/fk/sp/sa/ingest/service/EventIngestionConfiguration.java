@@ -11,6 +11,7 @@ import java.util.Map;
 public class EventIngestionConfiguration {
 
     private Map<String, List<String>> routes;
+    private List<String> transformers;
 
     public List<String> getRoutes(String outputEventName) {
         return routes.get(outputEventName);
