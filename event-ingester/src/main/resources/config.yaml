@@ -1,0 +1,3 @@
+transformers:
+  - fk.sp.sa.transformer.guice.MetricsDBTransformerModule
+

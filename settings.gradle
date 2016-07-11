@@ -4,5 +4,7 @@ include 'event-transformers'
 include 'event-server'
 include 'core'
 include 'event-ingester'
-include 'metricsDB-transformer'
+include 'event-transformers:metricsDB-transformer'
+
+
 

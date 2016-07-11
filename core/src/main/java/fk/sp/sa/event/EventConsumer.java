@@ -1,6 +1,11 @@
 package fk.sp.sa.event;
 
-public interface EventQueue {
+import fk.sp.sa.event.Message;
+
+/**
+ * Created by romil.goyal on 11/07/16.
+ */
+public interface EventConsumer {
 
     public Message getNext();
 
@@ -9,6 +14,4 @@ public interface EventQueue {
     public void reset();
 
     public void reset(int offset);
-
-    public void put(Message message);
 }

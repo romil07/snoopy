@@ -6,3 +6,7 @@ linger.ms: 1
 buffer.memory: 33554432
 key.serializer: org.apache.kafka.common.serialization.StringSerializer
 value.serializer: org.apache.kafka.common.serialization.StringSerializer
+group.id: test1
+enable.auto.commit: true
+auto.commit.interval.ms: 1000
+session.timeout.ms: 30000

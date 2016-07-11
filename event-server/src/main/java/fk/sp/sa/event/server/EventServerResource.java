@@ -1,9 +1,10 @@
 package fk.sp.sa.event.server;
 
 import com.google.inject.Inject;
-import fk.sp.sa.event.EventQueue;
+import fk.sp.sa.event.EventProducer;
 import fk.sp.sa.event.Message;
 import fk.sp.sa.event.input.InputEvent;
+import fk.sp.sa.event.EventConsumer;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -15,24 +16,26 @@ import javax.ws.rs.core.MediaType;
 @Produces(MediaType.APPLICATION_JSON)
 public class EventServerResource {
 
-    private EventQueue eventQueue;
+    private EventProducer eventProducer;
+    private EventConsumer eventConsumer;
 
     @Inject
-    public EventServerResource(EventQueue eventQueue) {
-        this.eventQueue = eventQueue;
+    public EventServerResource(EventProducer eventProducer, EventConsumer eventConsumer) {
+        this.eventProducer = eventProducer;
+        this.eventConsumer = eventConsumer;
     }
 
     @POST
     @Path("/ingest")
     public void ingestEvent(InputEvent inputEvent) {
         System.out.println(inputEvent);
-        eventQueue.put(new Message(inputEvent));
+        eventProducer.put(new Message(inputEvent));
     }
 
     @GET
     @Path("/get")
     public void getEvent() {
-        Object o = eventQueue.getNext();
+        Object o = eventConsumer.getNext();
         System.out.println(o);
     }
 }
